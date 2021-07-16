@@ -25,7 +25,7 @@ public class Probleme1Test {
 		 		 
 		 int result = Probleme1.rechercherOccurences(book,"3");
 		 
-		 System.out.println("Test 1 réussite:");
+		 System.out.println("Test 1 reussite:");
 		 
 		 System.out.println("Tableau: " + "{\"6\",\"13\",\"14\",\"3\",\"10\",\"20\",\"11\",\"5\",\"6\",\"13\",\"20\",\"6\"}");
 		 
@@ -71,7 +71,7 @@ public class Probleme1Test {
 		 
 		System.out.println("Resultat des tests == " + result.wasSuccessful());
 		
-		System.out.println("Durée des tests: " + result.getRunTime() + "ms");
+		System.out.println("Duree des tests: " + result.getRunTime() + "ms");
 		
 		
 	}
