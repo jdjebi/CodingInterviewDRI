@@ -4,7 +4,7 @@
 
 La complexité des fonctions des fonctions a été précisée en commentaire dans le corps des fonctions en début de programme.
 
-## Prérequis
+## Pré-requis
 
 Pour executer les sources de ce dépôt, je vous recommande d'utiliser les éléments suivant:
 
