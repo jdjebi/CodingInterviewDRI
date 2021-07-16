@@ -2,7 +2,7 @@
 
 ## Point sur la complexité
 
-La complexité des fonctions des fonctions a été précisée en commentaire dans le corps des fonctions en début de programme
+La complexité des fonctions des fonctions a été précisée en commentaire dans le corps des fonctions en début de programme.
 
 ## Prérequis
 
