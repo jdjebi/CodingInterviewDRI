@@ -20,10 +20,21 @@ public class Probleme1Test {
 	 */
 	@Test
 	public void test1() {
-		
-		 String [] book = new String [] {"1","2","3","85","1","1"}; // 1:3; 2:1; 3:1, 85:1
+				
+		 String [] book = new String [] {"6","13","14","3","10","20","11","5","6","13","20","6"}; 
+		 		 
+		 int result = Probleme1.rechercherOccurences(book,"3");
 		 
-		 assertEquals(1,Probleme1.rechercherOccurences(book,"3"));
+		 System.out.println("Test 1 réussite:");
+		 
+		 System.out.println("Tableau: " + "{\"6\",\"13\",\"14\",\"3\",\"10\",\"20\",\"11\",\"5\",\"6\",\"13\",\"20\",\"6\"}");
+		 
+		 System.out.println("Nombre d'occurences de 3 (8): " + result);
+		 
+		 System.out.println("---------------------------------------");
+
+		 assertEquals(1,result);
+		 
 	}
 	
 	/**
@@ -31,10 +42,21 @@ public class Probleme1Test {
 	 */
 	@Test
 	public void test2() {
-		
-		 String [] book = new String [] {"1","2","3","85","1","1"}; // 1:3; 2:1; 3:1, 85:1
+				
+		 String [] book = new String [] {"1","2","3","85","1","1","5","88"};
 		 
-		 assertNotEquals(1,Probleme1.rechercherOccurences(book,"1"));
+		 int result = Probleme1.rechercherOccurences(book,"1");
+		 
+		 System.out.println("Test 2 echec:");
+		 
+		 System.out.println("Tableau: " + "{\"1\",\"2\",\"3\",\"85\",\"1\",\"1\",\"5\",\"88\"}");
+		 		 
+		 System.out.println("Nombre d'occurences de 1 (1): " + result);
+		 		 		 
+		 System.out.println("---------------------------------------");
+
+		 assertNotEquals(1,result);
+		 
 	}
 	
 	/**
@@ -47,7 +69,10 @@ public class Probleme1Test {
 		     System.out.println(failure.toString());					
 		 }		
 		 
-		System.out.println("Résultat des tests == "+result.wasSuccessful());
+		System.out.println("Resultat des tests == " + result.wasSuccessful());
+		
+		System.out.println("Durée des tests: " + result.getRunTime() + "ms");
+		
 		
 	}
 
